@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+
+
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base de Datos de Señales PPG para Análisis y Estimación de la Presión Arterial</title>
+  <style>
+
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Establece el tamaño de la fuente para todo el cuerpo del documento */
+        body {
+            font-size: 16px; /* Puedes ajustar el tamaño de la fuente aquí */
+        }
+
+        /* Establece el tamaño de la fuente para los encabezados h1 */
+        h1 {
+            font-size: 40px; /* Puedes ajustar el tamaño de la fuente de los encabezados h1 aquí */
+        }
+
+        /* Establece el tamaño de la fuente para los párrafos */
+        p {
+            font-size: 20px; /* Puedes ajustar el tamaño de la fuente de los párrafos aquí */
+        }
+    </style>
+
+
+<head>
+    <style>
+        body {
+            margin:1cm; /* Establece un margen de 3cm para todo el cuerpo del documento */
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+   
+
+<style>
+  body {
+    text-align: center; /* Centra el contenido del cuerpo a la derecha */
+  }
+</style>
+
+<body>
+
+<img src="text.gif" />
+
+</body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .left-align {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://the-juanjo.github.io/Base-de-Datos-de-Se-ales-de-PPG-para-An-lisis-y-Estimaci-n-de-Presi-n-Arterial/" class="left-align" method="GET">
+    <button type="submit">Cambiar al Español</button>
+  </form>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    
+   <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /* Estilo de fondo para el body */
+    body {
+        background-color: #f2f2f2; /* Gris claro */
+        font-family: Arial, sans-serif; /* Establecer una fuente predeterminada */
+    }
+
+    /* Estilo para justificar el texto dentro de los párrafos */
+    section p {
+        text-align: justify; /* Justificar el texto */
+    }
+</style>
+</head>
+<body>
+    <main>
+        <section id="DESCRIPCIÓN">
+             &nbsp;&nbsp;<h2>●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬୧ DESCRIPTION ୨▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●</h2>
+            <p>The following table contains individual records of photoplethysmography (PPG) measurements taken from 56 people in a laboratory setting, with none of the subjects being hospitalized. Each measurement lasts for 2 minutes and has been taken with a sampling frequency of 100 Hz. The mentioned records are data from measurements captured by a photoplethysmography sensor, with which the PPG signal can be easily constructed. The purpose of this database is to provide support for the development of approaches aimed at estimating blood pressure.</p>
+        </section>
+        
+        <section id="acerca">
+             &nbsp;&nbsp;<h2>:･ﾟ✵ :･ﾟ✧ :･ﾟ✵✧:･ﾟ✵ :･ﾟ✧:･:･ﾟ✵ :･ﾟ✧ :･:･ﾟABOUT THE TABLE :･ﾟ✵ :･ﾟ✧ :･ﾟ✵ *:･ :･ﾟ✧:･ﾟ:･ﾟ✵ :･ﾟ✧ :･ﾟ✵ *:･ﾟ✧:･</h2>
+            <p>The table consists of 11 columns and 56 rows (excluding the label row), where each row represents an individual record of each subject properly identified. The columns contain information such as age, gender, a "Yes" or "No" indicating whether the patient has a diagnosis of blood pressure levels, measurements of systolic and diastolic blood pressure, heart rate, a "Yes" or "No" indicating whether the subject is or has received treatment, and a classification according to the criteria of the Joint National Committee (JNC) and the American Heart Association (AHA) determining whether the person is prehypertensive, normotensive, or hypertensive. Each record is linked to a comma-separated values (".csv") file containing the measurement data of that individual's specific PPG signal. By clicking on "Signal_PPG_Subject_Number" (underlined and in blue), the file of the corresponding subject's PPG signal will be downloaded. Additionally, you can download a ".CSV" file with the data of each subject displayed in the table by clicking on the link "CSV FILE", and you can also download the 56 files in a compressed ".zip" folder by clicking on the link "Download ZIP file", both located at the end of the table.</p>
+
+		&nbsp;&nbsp;<p>The table offers 4 filters to navigate through it more efficiently. You can filter by age ranges, male or female gender, and by the classifications of the JNC or the AHA. These filters allow you to customize your search and find the information you need quickly and easily.</p>
+
+		&nbsp;&nbsp;<p>ღ Note: When you press the "Clear filters" button, all applied filters will be removed, and the table will return to its original state. However, you can reapply the filters you consider necessary to customize your search</p>
+        </section>
+
+<section id="tabla">
+            &nbsp;&nbsp;<h2>•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*••*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*• RECORDS TABLE •*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*••*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*• </h2>
+</section>
+    </main>
+        
+
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabla de Información</title>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+<label for="ageFilter">Filter by age:</label>
+<select id="ageFilter">
+    <option value="all">All</option>
+    <option value="between40and50">between 40 and 50</option>
+    <option value="between51and60">between 51 and 60</option>
+    <option value="above60">Above of 60</option>
+</select>
+
+<label for="genderFilter">Filter by gender:</label>
+<select id="genderFilter">
+    <option value="all">All</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+</select>
+
+<label for="jncFilter">Filter by JNC:</label>
+<select id="jncFilter">
+    <option value="all">All</option>
+    <option value="Prehypertensive">Prehypertensive</option>
+    <option value="Normotensive">Normotensive</option>
+    <option value="Hypertensive">Hypertensive</option>
+</select>
+
+<label for="ahaFilter">Filter by AHA:</label>
+<select id="ahaFilter">
+    <option value="all">All</option>
+    <option value="Prehypertensive">Prehypertensive</option>
+    <option value="Normotensive">Normotensive</option>
+    <option value="Hypertensive">Hypertensive</option>
+</select>
+
+
+
+
+
+<table id="data">
+      <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Diagnosed</th>
+            <th>Systolic Pressure</th>
+            <th>Diastolic Pressure</th>
+            <th>Heart Rate</th>
+            <th>Treatment</th>
+            <th>JNC</th>
+            <th>AHA</th>
+            <th>PPG Signal Files</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <td>Subject 01</td>
+            <td>44</td>
+            <td>Male</td>
+            <td>YES</td>
+            <td>124</td>
+            <td>83</td>
+            <td>76</td>
+            <td>NO</td>
+            <td>Prehypertensive</td>
+            <td>Hypertensive</td>
+            <td><a href="https://drive.google.com/uc?export=download&id=1XwLobdcQq2OndmNc67r-G83ifQD63d5T" target="_blank">Signal_PPG_Subj_1</a></td>
+        </tr>
+        <tr>
+            <td>Subject 02</td>
+            <td>58</td>
+            <td>Male</td>
+            <td>YES</td>
+            <td>115</td>
+            <td>75</td>
+            <td>84</td>
+            <td>YES</td>
+            <td>Normotensive</td>
+            <td>Normotensive</td>
+            <td><a href="https://drive.google.com/uc?export=download&id=1P5E85h_tk2rokxLIlfTuI2_2nfZ-OvLX" target="_blank">Signal_PPG_Subj_2</a></td>
+        </tr>
+        <tr>
+            <td>Subject 03</td>
+            <td>57</td>
+            <td>Female</td>
+            <td>YES</td>
+            <td>121</td>
+            <td>72</td>
+            <td>56</td>
+            <td>YES</td>
+            <td>Prehypertensive</td>
+            <td>Prehypertensive</td>
+            <td><a href="https://drive.google.com/uc?export=download&id=1FPrYFA6ktLl7pWhm1UkBdiWe_4X_TbXd" target="_blank">Signal_PPG_Subj_3</a></td>
+        </tr>
+
+</tr>
+<tr>
+    <td>Subject 04</td>
+    <td>48</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>125</td>
+    <td>75</td>
+    <td>73</td>
+    <td>YES</td>
+    <td>Prehypertensive</td>
+    <td>Prehypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1Dsb0ad1JQ2COKa0FeRMJf4fBfyGcyzIi" target="_blank">Signal_PPG_Subj_4</a></td>
+</tr>
+
+<tr>
+    <td>Subject 05</td>
+    <td>46</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>97</td>
+    <td>64</td>
+    <td>86</td>
+    <td>YES</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1yUknSAD5gkhtBcDLO8yR1RItbokD0KRS" target="_blank">Signal_PPG_Subj_5</a></td>
+</tr>
+
+<tr>
+    <td>Subject 06</td>
+    <td>65</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>119</td>
+    <td>57</td>
+    <td>85</td>
+    <td>YES</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1uCnNpBFij1wWV3pOMhZc73fcXZAYsZc8" target="_blank">Signal_PPG_Subj_6</a></td>
+</tr>
+
+
+<tr>
+    <td>Subject 07</td>
+    <td>60</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>161</td>
+    <td>94</td>
+    <td>68</td>
+    <td>YES</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=10ORVrVfRv5u0uA97UEPGSTqBclapfZvw" target="_blank">Signal_PPG_Subj_7</a></td>
+</tr>
+
+<tr>
+    <td>Subject 08</td>
+    <td>47</td>
+    <td>Male</td>
+    <td>YES</td>
+    <td>148</td>
+    <td>96</td>
+    <td>58</td>
+    <td>NO</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1qIKKPiecfHWLABpC1I8kohPU1e7ETqkS" target="_blank">Signal_PPG_Subj_8</a></td>
+</tr>
+<tr>
+    <td>Subject 09</td>
+    <td>46</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>122</td>
+    <td>74</td>
+    <td>62</td>
+    <td>YES</td>
+    <td>Prehypertensive</td>
+    <td>Prehypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1JywuDnQeA3_jdhu5JM2tcV_Tq9f-TPjF" target="_blank">Signal_PPG_Subj_9</a></td>
+</tr>
+<tr>
+    <td>Subject 10</td>
+    <td>58</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>114</td>
+    <td>71</td>
+    <td>75</td>
+    <td>YES</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1RiWNP3Woy_pcXH-5C1C2mAmc45Uc3Or4" target="_blank">Signal_PPG_Subj_10</a></td>
+</tr>
+<tr>
+    <td>Subject 11</td>
+    <td>57</td>
+    <td>Male</td>
+    <td>YES</td>
+    <td>112</td>
+    <td>72</td>
+    <td>75</td>
+    <td>YES</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1v5gJdw3fXcYImZWQUvTL8Yj4Y0aN2QC_" target="_blank">Signal_PPG_Subj_11</a></td>
+</tr>
+<tr>
+    <td>Subject 12</td>
+    <td>65</td>
+    <td>Male</td>
+    <td>YES</td>
+    <td>111</td>
+    <td>70</td>
+    <td>75</td>
+    <td>NO</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1CA6S8J8-2Pp6gl-i0SyYLIY1yqUJmy1o" target="_blank">Signal_PPG_Subj_12</a></td>
+</tr>
+<tr>
+    <td>Subject 13</td>
+    <td>45</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>144</td>
+    <td>87</td>
+    <td>65</td>
+    <td>NO</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1CDPmNZNLtmswWKFGTaQoEWlo6USAFIwc" target="_blank">Signal_PPG_Subj_13</a></td>
+</tr>
+<tr>
+    <td>Subject 14</td>
+    <td>45</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>130</td>
+    <td>90</td>
+    <td>88</td>
+    <td>NO</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1Wm8s1F7nh6umMMjSgQoIkv_693tK1nrH" target="_blank">Signal_PPG_Subj_14</a></td>
+</tr>
+<tr>
+    <td>Subject 15</td>
+    <td>45</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>103</td>
+    <td>65</td>
+    <td>97</td>
+    <td>NO</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1j7FL53pOP9nUN-JHZFrCgSMwvwU-oLCh" target="_blank">Signal_PPG_Subj_15</a></td>
+</tr>
+<tr>
+    <td>Subject 16</td>
+    <td>48</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>152</td>
+    <td>109</td>
+    <td>100</td>
+    <td>NO</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=16GNJ3NSM4wM6T9cESFVgfpwk2_Oa-zk8" target="_blank">Signal_PPG_Subj_16</a></td>
+</tr>
+<tr>
+    <td>Subject 17</td>
+    <td>65</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>133</td>
+    <td>81</td>
+    <td>77</td>
+    <td>NO</td>
+    <td>Prehypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1zQ7_OGkvEqp2SCyjQIYdWn44A_0dJmO1" target="_blank">Signal_PPG_Subj_17</a></td>
+</tr>
+<tr>
+    <td>Subject 18</td>
+    <td>45</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>135</td>
+    <td>90</td>
+    <td>84</td>
+    <td>NO</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1xek8qyloK5E9t0H63N5YJU8CH5f7-A8S" target="_blank">Signal_PPG_Subj_18</a></td>
+</tr>
+<tr>
+    <td>Subject 19</td>
+    <td>57</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>120</td>
+    <td>68</td>
+    <td>58</td>
+    <td>NO</td>
+    <td>Normotensive</td>
+    <td>Prehypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1jX7vJHKIdoXV1QPy1DSRadGtdXrzm3wk" target="_blank">Signal_PPG_Subj_19</a></td>
+</tr>
+<tr>
+    <td>Subject 20</td>
+    <td>53</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>154</td>
+    <td>93</td>
+    <td>62</td>
+    <td>NO</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1wWRp3cHRMT9Z_7ixVXeXwenwFmac2jRP" target="_blank">Signal_PPG_Subj_20</a></td>
+</tr>
+<tr>
+    <td>Subject 21</td>
+    <td>55</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>125</td>
+    <td>84</td>
+    <td>62</td>
+    <td>NO</td>
+    <td>Prehypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1_Xp_pnNxZtIw4nKcnmYAi0_W7V5sffJC" target="_blank">Signal_PPG_Subj_21</a></td>
+</tr>
+<tr>
+    <td>Subject 22</td>
+    <td>45</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>106</td>
+    <td>60</td>
+    <td>53</td>
+    <td>NO</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1UymyrQaR1ElOjEC9UrK35pQJUsmPniiz" target="_blank">Signal_PPG_Subj_22</a></td>
+</tr>
+<tr>
+    <td>Subject 23</td>
+    <td>45</td>
+    <td>Male</td>
+    <td>YES</td>
+    <td>127</td>
+    <td>82</td>
+    <td>71</td>
+    <td>YES</td>
+    <td>Prehypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1ZAZKXFbqo21DunFWLitVitY3DY0XLkZv" target="_blank">Signal_PPG_Subj_23</a></td>
+</tr>
+<tr>
+    <td>Subject 24</td>
+    <td>57</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>110</td>
+    <td>60</td>
+    <td>78</td>
+    <td>YES</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1-FR0vg4F_rkK4pbzOtr2OkRT_nP23yKf" target="_blank">Signal_PPG_Subj_24</a></td>
+</tr>
+<tr>
+    <td>Subject 25</td>
+    <td>45</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>115</td>
+    <td>60</td>
+    <td>72</td>
+    <td>NO</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1ANk5iSY1DjQw0ir8MTUhnif48xnZ3667" target="_blank">Signal_PPG_Subj_25</a></td>
+</tr>
+<tr>
+    <td>Subject 26</td>
+    <td>45</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>137</td>
+    <td>90</td>
+    <td>69</td>
+    <td>YES</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1dbIS5i97VYJ2EfzKopJ-ns7H5os-pLnL" target="_blank">Signal_PPG_Subj_26</a></td>
+</tr>
+<tr>
+    <td>Subject 27</td>
+    <td>56</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>135</td>
+    <td>97</td>
+    <td>69</td>
+    <td>NO</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=15YS6shhCNi5mGdtOhYQyiLQGMEkCsonq" target="_blank">Signal_PPG_Subj_27</a></td>
+</tr>
+<tr>
+    <td>Subject 28</td>
+    <td>45</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>120</td>
+    <td>78</td>
+    <td>70</td>
+    <td>NO</td>
+    <td>Normotenso</td>
+    <td>Prehypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1--DiaGh_0GTQALzUi3bErm4No8P3ifWK" target="_blank">Signal_PPG_Subj_28</a></td>
+</tr>
+<tr>
+    <td>Subject 29</td>
+    <td>50</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>135</td>
+    <td>83</td>
+    <td>76</td>
+    <td>YES</td>
+    <td>Prehypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1VCR5NeKcicnqrpyjAEj48wxzYGLeLgSt" target="_blank">Signal_PPG_Subj_29</a></td>
+</tr>
+<tr>
+    <td>Subject 30</td>
+    <td>45</td>
+    <td>Male</td>
+    <td>NO</td>
+    <td>111</td>
+    <td>78</td>
+    <td>72</td>
+    <td>NO</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1XKsswiZ7v4ZINQTDwHLAhbsK4rN2OFeB" target="_blank">Signal_PPG_Subj_30</a></td>
+</tr>
+<tr>
+    <td>Subject 31</td>
+    <td>46</td>
+    <td>Male</td>
+    <td>YES</td>
+    <td>129</td>
+    <td>82</td>
+    <td>72</td>
+    <td>SI</td>
+    <td>Prehypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1QOALs4EJ8WTYrJehAREBmV_HhuBP4QjV" target="_blank">Signal_PPG_Subj_31</a></td>
+</tr>
+<tr>
+    <td>Subject 32</td>
+    <td>50</td>
+    <td>Male</td>
+    <td>NO</td>
+    <td>129</td>
+    <td>79</td>
+    <td>68</td>
+    <td>NO</td>
+    <td>Prehypertensive</td>
+    <td>Prehypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1cEoI9HrHx2p2fe9-PCNANC9vEConvZMq" target="_blank">Signal_PPG_Subj_32</a></td>
+</tr>
+<tr>
+    <td>Subject 33</td>
+    <td>64</td>
+    <td>Male</td>
+    <td>NO</td>
+    <td>125</td>
+    <td>75</td>
+    <td>78</td>
+    <td>NO</td>
+    <td>Prehypertensive</td>
+    <td>Prehypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1FgEMSrIIMOERslpOFpqV6RZYHPnjvvf9" target="_blank">Signal_PPG_Subj_33</a></td>
+</tr>
+<tr>
+    <td>Subject 34</td>
+    <td>48</td>
+    <td>Male</td>
+    <td>NO</td>
+    <td>130</td>
+    <td>87</td>
+    <td>80</td>
+    <td>NO</td>
+    <td>Prehypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1uel4-H6uKwgpXWKqxsPl9wz_s_R9H6XQ" target="_blank">Signal_PPG_Subj_34</a></td>
+</tr>
+<tr>
+    <td>Subject 35</td>
+    <td>62</td>
+    <td>Male</td>
+    <td>YES</td>
+    <td>153</td>
+    <td>88</td>
+    <td>84</td>
+    <td>YES</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1ITIsBEP6c7p-nrriIZ_9ANbBMU-jB5BS" target="_blank">Signal_PPG_Subj_35</a></td>
+</tr>
+<tr>
+    <td>Subject 36</td>
+    <td>55</td>
+    <td>Male</td>
+    <td>NO</td>
+    <td>122</td>
+    <td>72</td>
+    <td>81</td>
+    <td>NO</td>
+    <td>Prehypertensive</td>
+    <td>Prehypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1pnAd9CKuKSyGocgFAXhjvq0gUYhYpvcy" target="_blank">Signal_PPG_Subj_36</a></td>
+</tr>
+<tr>
+    <td>Subject 37</td>
+    <td>57</td>
+    <td>Male</td>
+    <td>NO</td>
+    <td>127</td>
+    <td>80</td>
+    <td>83</td>
+    <td>NO</td>
+    <td>Prehypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1icc71Xg3Xh1OJPr7W3J8EjexuJ-clmcu" target="_blank">Signal_PPG_Subj_37</a></td>
+</tr>
+<tr>
+    <td>Subject 38</td>
+    <td>63</td>
+    <td>Male</td>
+    <td>NO</td>
+    <td>121</td>
+    <td>87</td>
+    <td>68</td>
+    <td>NO</td>
+    <td>Prehypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1HHWfkEBVDmjU4KK9wGGZTi66Gfyycx9h" target="_blank">Signal_PPG_Subj_38</a></td>
+</tr>
+<tr>
+    <td>Subject 39</td>
+    <td>48</td>
+    <td>Male</td>
+    <td>NO</td>
+    <td>132</td>
+    <td>83</td>
+    <td>90</td>
+    <td>NO</td>
+    <td>Prehypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1qf_cTgODKFbJ9OfWwcfkW7pfs_1h56tl" target="_blank">Signal_PPG_Subj_39</a></td>
+</tr>
+<tr>
+    <td>Subject 40</td>
+    <td>65</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>116</td>
+    <td>79</td>
+    <td>106</td>
+    <td>NO</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1EWCVWHYmjR5upr1kYbfY97GPLkiaMToZ" target="_blank">Signal_PPG_Subj_40</a></td>
+</tr>
+
+<tr>
+    <td>Subject 41</td>
+    <td>60</td>
+    <td>Male</td>
+    <td>YES</td>
+    <td>140</td>
+    <td>91</td>
+    <td>54</td>
+    <td>SI</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=14shJE2o-zDZFUj5vZwT4D_dyga8xyTDb" target="_blank">Signal_PPG_Subj_41</a></td>
+</tr>
+<tr>
+    <td>Subject 42</td>
+    <td>60</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>144</td>
+    <td>86</td>
+    <td>68</td>
+    <td>YES</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1JwxDZZ72I2xEgYb8oeh_mTZnGjrvqkYW" target="_blank">Signal_PPG_Subj_42</a></td>
+</tr>
+<tr>
+    <td>Subject 43</td>
+    <td>45</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>154</td>
+    <td>96</td>
+    <td>65</td>
+    <td>NO</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1BKlZm4wG6WptddUPNF2g4V-OVtE83y8Q" target="_blank">Signal_PPG_Subj_43</a></td>
+</tr>
+<tr>
+    <td>Subject 44</td>
+    <td>53</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>164</td>
+    <td>93</td>
+    <td>62</td>
+    <td>NO</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1mBrWhtc8T3zR8Js0rCy1s5ZDKnKajfNY" target="_blank">Signal_PPG_Subj_44</a></td>
+</tr>
+<tr>
+    <td>Subject 45</td>
+    <td>45</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>142</td>
+    <td>90</td>
+    <td>69</td>
+    <td>YES</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1-oSfahp5qc91lXeomlmQAGd67lbFt8D1" target="_blank">Signal_PPG_Subj_45</a></td>
+</tr>
+<tr>
+    <td>Subject 46</td>
+    <td>56</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>145</td>
+    <td>90</td>
+    <td>69</td>
+    <td>NO</td>
+    <td>Hypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1QcWgNSVUwjxucH9dd-pP7qofPEJMN0l0" target="_blank">Signal_PPG_Subj_46</a></td>
+</tr>
+<tr>
+    <td>Subject 47</td>
+    <td>46</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>118</td>
+    <td>75</td>
+    <td>86</td>
+    <td>YES</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1kINFkoit4hK9i83SEutdAROIqpiZCw4d" target="_blank">Signal_PPG_Subj_47</a></td>
+</tr>
+<tr>
+    <td>Subject 48</td>
+    <td>45</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>107</td>
+    <td>68</td>
+    <td>97</td>
+    <td>NO</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1YnkmPbMeKdo41Z0xBT5q0mIi71yjf4rV" target="_blank">Signal_PPG_Subj_48</a></td>
+</tr>
+<tr>
+    <td>Subject 49</td>
+    <td>45</td>
+    <td>Female</td>
+    <td>NO</td>
+    <td>118</td>
+    <td>62</td>
+    <td>72</td>
+    <td>NO</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1RDqLDLA9bHZIPzAsBV_meJRS-J4iUSj5" target="_blank">Signal_PPG_Subj_49</a></td>
+</tr>
+<tr>
+    <td>Subject 50</td>
+    <td>55</td>
+    <td>Male</td>
+    <td>NO</td>
+    <td>119</td>
+    <td>74</td>
+    <td>81</td>
+    <td>NO</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1hEdUYe-KFSK25WGtaRvVLATHTYr3NjsY" target="_blank">Signal_PPG_Subj_50</a></td>
+</tr>
+<tr>
+    <td>Subject 51</td>
+    <td>57</td>
+    <td>Male</td>
+    <td>NO</td>
+    <td>114</td>
+    <td>75</td>
+    <td>83</td>
+    <td>NO</td>
+    <td>Normotensive</td>
+    <td>Normotensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1lJUMzoe4a1vPKMLawqct-DrTx5_xaydn" target="_blank">Signal_PPG_Subj_51</a></td>
+</tr>
+<tr>
+    <td>Subject 52</td>
+    <td>58</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>128</td>
+    <td>72</td>
+    <td>75</td>
+    <td>YES</td>
+    <td>Prehypertensive</td>
+    <td>Prehypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1PLN2bSP7fdLccv5ddWmU-HgdxLdDeV2D" target="_blank">Signal_PPG_Subj_52</a></td>
+</tr>
+<tr>
+    <td>Subject 53</td>
+    <td>65</td>
+    <td>Male</td>
+    <td>YES</td>
+    <td>121</td>
+    <td>75</td>
+    <td>75</td>
+    <td>NO</td>
+    <td>Prehypertensive</td>
+    <td>Prehypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1UVRF1wn3lfaqMb9HdiEK5ZX5A-BKnKD4" target="_blank">Signal_PPG_Subj_53</a></td>
+</tr>
+<tr>
+    <td>Subject 54</td>
+    <td>58</td>
+    <td>Male</td>
+    <td>YES</td>
+    <td>134</td>
+    <td>85</td>
+    <td>76</td>
+    <td>NO</td>
+    <td>Prehypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1U5BYWrQhHUFaotCb216qDzTzpmgn2ySH" target="_blank">Signal_PPG_Subj_54</a></td>
+</tr>
+<tr>
+    <td>Subject 55</td>
+    <td>45</td>
+    <td>Male</td>
+    <td>YES</td>
+    <td>128</td>
+    <td>83</td>
+    <td>71</td>
+    <td>YES</td>
+    <td>Prehypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=12yZDf4WPrf5JKpWIHOoufdwRcALcUDff" target="_blank">Signal_PPG_Subj_55</a></td>
+</tr>
+<tr>
+    <td>Subject 56</td>
+    <td>46</td>
+    <td>Female</td>
+    <td>YES</td>
+    <td>128</td>
+    <td>89</td>
+    <td>78</td>
+    <td>YES</td>
+    <td>Prehypertensive</td>
+    <td>Hypertensive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1-i8-ezOqOZiZqKX-MBOVCT5v6XPro6E8" target="_blank">Signal_PPG_Subj_56</a></td>
+</tr>
+
+
+
+
+    </tbody>
+
+<button id="clearFiltersButton">Clear Filter</button>
+
+</table>
+
+
+<script>
+    var originalData = [];
+
+    document.querySelectorAll('#data tbody tr').forEach(function(row) {
+        originalData.push({
+            subject: row.cells[0].textContent,
+            age: parseInt(row.cells[1].textContent),
+            gender: row.cells[2].textContent,
+            diagnosed: row.cells[3].textContent,
+            systolicBP: parseInt(row.cells[4].textContent),
+            diastolicBP: parseInt(row.cells[5].textContent),
+            heartRate: parseInt(row.cells[6].textContent),
+            treatment: row.cells[7].textContent,
+            jnc: row.cells[8].textContent,
+            aha: row.cells[9].textContent,
+            archivos: row.cells[10].querySelector('a').getAttribute('href'),
+            archivosText: row.cells[10].textContent
+        });
+    });
+
+     document.getElementById('ageFilter').addEventListener('change', filterTable);
+    document.getElementById('genderFilter').addEventListener('change', filterTable);
+    document.getElementById('jncFilter').addEventListener('change', filterTable);
+    document.getElementById('ahaFilter').addEventListener('change', filterTable);
+    document.getElementById('clearFiltersButton').addEventListener('click', clearAllFilters);
+
+    function filterTable() {
+        var ageFilter = document.getElementById('ageFilter').value;
+        var genderFilter = document.getElementById('genderFilter').value;
+        var jncFilter = document.getElementById('jncFilter').value;
+        var ahaFilter = document.getElementById('ahaFilter').value;
+
+        var filteredData = originalData.filter(function(row) {
+            var ageCondition = true;
+            var genderCondition = true;
+            var jncCondition = true;
+            var ahaCondition = true;
+
+            if (ageFilter === 'below40') {
+                ageCondition = row.age < 40;
+            } else if (ageFilter === 'between40and50') {
+                ageCondition = row.age >= 40 && row.age <= 50;
+             } else if (ageFilter === 'between51and60') {
+                ageCondition = row.age >= 51 && row.age <= 60;
+            } else if (ageFilter === 'above60') {
+                ageCondition = row.age > 60;
+            }
+
+            if (genderFilter !== 'all') {
+                genderCondition = row.gender === genderFilter;
+            }
+
+            if (jncFilter !== 'all') {
+                jncCondition = row.jnc === jncFilter;
+            }
+
+            if (ahaFilter !== 'all') {
+                ahaCondition = row.aha === ahaFilter;
+            }
+
+            return ageCondition && genderCondition && jncCondition && ahaCondition;
+        });
+
+        var tbody = document.querySelector('#data tbody');
+        tbody.innerHTML = '';
+
+        filteredData.forEach(function(row) {
+            var newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td>${row.subject}</td>
+                <td>${row.age}</td>
+                <td>${row.gender}</td>
+                <td>${row.diagnosed}</td>
+                <td>${row.systolicBP}</td>
+                <td>${row.diastolicBP}</td>
+                <td>${row.heartRate}</td>
+                <td>${row.treatment}</td>
+                <td>${row.jnc}</td>
+                <td>${row.aha}</td>
+                <td><a href="${row.archivos}" target="_blank">${row.archivosText}</a></td>
+            `;
+            tbody.appendChild(newRow);
+        });
+    }
+
+    function clearAllFilters() {
+        document.getElementById('ageFilter').value = 'all';
+        document.getElementById('genderFilter').value = 'all';
+        document.getElementById('jncFilter').value = 'all';
+        document.getElementById('ahaFilter').value = 'all';
+
+        filterTable();
+    }
+</script>
+
+
+
+    </tbody>
+</table>
+
+
+
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descargar archivo ZIP desde Google Drive</title>
+</head>
+<body>
+
+
+
+
+&nbsp;&nbsp;<h2>★═════════════════════════◈ DOWNLOAD ZIP FILE ◈═════════════════════════★</h2>
+<p>You can download the ZIP file containing all the signals by clicking on the following link:</p>
+<a href="https://drive.google.com/uc?export=download&id=1ZhrXZpG50g4rwI15EpdDak6_is2GYmG6" target="_blank">Download ZIP file</a>
+
+<body>
+     &nbsp;&nbsp;<h2>✩﻿ ────────────── 「 ༻ DOWNLOAD THE ".CSV" FILE OF THE SUBJECTS ༺ 」────────────── ✩</h2>
+
+    <!-- Enlace de descarga directa del archivo CSV -->
+    <a href="https://drive.google.com/uc?export=download&id=1w1UNeXjwqMI0Nz7bvZVnzck5PKtWIir0" target="_blank">CSV FILE</a>
+</body>
+
+
+
+
+
+
+
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espacio en blanco de 5 cm</title>
+    <style>
+        .espacio-en-blanco {
+            margin-top: 5cm; /* Establecer un margen superior de 5 cm */
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- Div para crear espacio en blanco -->
+    <div class="espacio-en-blanco"></div>
+
+     <section id="contacto">
+    <h2>╭━─━─━─━─━─━─━─━─━─━─━─━─≪ CONTACT ≫━─━─━─━─━─━─━─━─━─━─━─━─╮</h2>
+    <p><strong>Creators:</strong></p>
+    <p>♡ Luisa Fernanda Salcedo Mesa - <a href="mailto:luisa.salcedo02@usc.edu.co">luisa.salcedo02@usc.edu.co</a></p>
+    <p>♡ Juan José Salazar Salazar - <a href="mailto:juan.salazar11@usc.edu.co">juan.salazar11@usc.edu.co</a></p>
+    <p>Biomedical Engineering Program</p>
+    <p><strong>PPG data provided by:</strong></p>
+    <p>♡ Prof. Erick Javier Argüello Prada, PhD. Faculty of Engineering - Biomedical Engineering Program - <a href="mailto:erick.arguello00@usc.edu.co">erick.arguello00@usc.edu.co</a></p>
+</section>
+</body>
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen PNG Centrada</title>
+    <style>
+        /* Estilo para centrar la imagen */
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh; /* Ajusta el alto a la altura de la ventana */
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <img src="tu_imagen.png" alt="Imagen" style="width: 5cm; height: 6cm;">
+    </div>
+</body>
+
+
+
+
+<footer>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p>Universidad Santiago de Cali - Valle del Cauca, Colombia. </p>
+    <p>Copyright &copy; 2024 Luisa Fernanda Salcedo Mesa, Juan José Salazar Salazar y Erick Javier Argüello Prada. </p>
+   <h2>╰━─━─━─━─━─━─━─━─━─━─━─━─━─≪ ✠ ≫━─━─━─━─━─━─━─━─━─━─━─━─━─╯</h2>
+</footer>
+
+
+
+<style>
+  /* Estilos para los corazones */
+  .heart {
+    position: absolute;
+    width: 0.1cm;
+    height: 0.1cm;
+    color: red;
+    animation: heartbeat 1.5s infinite;
+  }
+
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1.3);
+    }
+    40% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(1.3);
+    }
+    80% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+</style>
+</head>
+<body>
+
+
+<!-- Corazones -->
+<script>
+  // Crear 15 corazones dispersos por la página
+  document.addEventListener("DOMContentLoaded", function() {
+    const numHearts = 8;
+
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = Math.random() * (window.innerWidth) + 'px'; // Resta el ancho del corazón para evitar que se muestren parcialmente fuera del área de la ventana
+      heart.style.top = Math.random() * (window.innerHeight) + 'px'; // Resta la altura del corazón para evitar que se muestren parcialmente fuera del área de la ventana
+      heart.innerHTML = "&hearts;";
+      document.body.appendChild(heart);
+    }
+
+    for (let i = 0; i < numHearts; i++) {
+      createHeart();
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
